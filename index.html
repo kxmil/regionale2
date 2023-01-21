@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Qualif Régionale 2</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script>
+    const options = {method: 'GET', headers: {Accept: 'application/json'}};
+        fetch('https://api-agregateur.ffr.fr/graphql?saisonId=&variables=%7B%22competitionIdentifiant%22%3A%22ile-de-france-regionale-2-championnat-territorial%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22f252bf1fdf85ccf1cfcf914967a52fc753a8675a2e81e7ab6891f58a2a4674bf%22%7D%7D', options)
+        .then(response => response.json())
+        .then(function(response) {
+            console.log(response)
+
+            data = response;
+
+            bank()
+
+            return response
+        })
+        .catch(err => console.error(err));
+    </script>
+  </body>
+</html>
