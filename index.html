@@ -204,9 +204,9 @@
 
       let quatriemes = [
         //{ equipe: poule1[2].Equipe.nom, score: poule1[2].score.pointTerrain, img: "https://api-agregateur-static.ffr.fr/assets/embleme/rassemblement/rassemblement.svg"},
-        { equipe: poule1[3].Equipe.nom, score: poule1[3].score.pointTerrain, img: "https://api-agregateur-static.ffr.fr/assets/embleme/rassemblement/rassemblement.svg" },
+        { equipe: poule1[3].Equipe.nom, score: poule1[3].score.pointTerrain, img: poule1[3].Equipe.Structure.logo },
         { equipe: poule2[3].Equipe.nom, score: poule2[3].score.pointTerrain, img: poule2[3].Equipe.Structure.logo },
-        { equipe: poule3[3].Equipe.nom, score: poule3[3].score.pointTerrain, img: poule3[3].Equipe.Structure.logo }
+        { equipe: poule3[3].Equipe.nom, score: poule3[3].score.pointTerrain, img: "https://api-agregateur-static.ffr.fr/assets/embleme/rassemblement/rassemblement.svg" }
       ]
       quatriemes.sort(function(a, b) {
         return b.score - a.score;
